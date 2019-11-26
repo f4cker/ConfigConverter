@@ -1,0 +1,11 @@
+---
+apps:
+  - name: config-converter
+    script: serve
+    instances: 1
+    exec_mode: fork
+    merge_logs: true
+    max_memory_restart: 1400M
+    env:
+      PM2_SERVE_PATH: dist
+      PM2_SERVE_PORT: 8000

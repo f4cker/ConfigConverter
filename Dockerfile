@@ -12,9 +12,9 @@ RUN npm i yarn && \
   yarn add umi-plugin-react --dev && \
   yarn install && \
   umi build && \
-  yarn cache clean
+  yarn cache clean && rm -rf node_modules yarn.lock
 
 EXPOSE 8000
 
-CMD [ "pm2-runtime", "serve", "./dist", "8000"]
+CMD [ "pm2-runtime", "./pm2.yaml"]
 
