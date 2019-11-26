@@ -12,7 +12,7 @@ RUN npm i yarn && \
   yarn add umi-plugin-react --dev && \
   yarn install && \
   umi build && \
-  rm -rf node_modules yarn.lock && yarn cache clean
+  yarn cache clean
 
 EXPOSE 8000
 
