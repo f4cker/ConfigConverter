@@ -16,5 +16,5 @@ RUN npm i yarn && \
 
 EXPOSE 8000
 
-CMD [ "pm2", "serve", "./dist", "8000"]
+CMD [ "pm2-runtime", "serve", "./dist", "8000"]
 
